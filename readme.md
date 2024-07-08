@@ -3,6 +3,9 @@
 -----------------------
 Browny is a one page bootstrap 3 based resume/portfolio template.
 
+See the Website in Live:
+-----------------------
+Click this link: https://marco-lou.github.io/portfolio/
 
 Template Info:
 -----------------------
