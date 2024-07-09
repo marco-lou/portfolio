@@ -370,10 +370,26 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    padding: 50px 0 80px;
 }
-.skill-content{padding: 50px 0 80px;}
-.single-skill-content{padding-top: 100px;}
+
+.skill-container {
+    flex: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.title-skill {
+    grid-column: span 3;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    size: 14px;
+}
+
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
@@ -381,58 +397,59 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2;
 }
-.single-progress-txt {
-    display: flex;
+
+.skill-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
-.single-progress-txt h3 {
-    width: 10%;
-    color: blue;
-    position: relative;
-    top: 6px;
-    left: 20px;
+
+.exploring, .building, .connecting {
+    background-color: #e5e5e5;
+    border-radius: 8px;
+    padding: 20px;
 }
-.barWrapper {
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
+
+.exploring .items, .building .items, .connecting .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
-.progress {
-    border-radius:3px;
-    overflow: visible;
-    background: #e6ecf3;
-    height:8px;
-    margin-top: 15px;
-    width: 85%;
-    margin-bottom: 37px;
+
+.exploring .items .item, .building .items .item, .connecting .items .item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
 }
-.progress-bar {
-   background: blue;
-    border-radius: 3px;
-   -webkit-transition: width 1.5s ease-in-out;
-   -ms-transition: width 1.5s ease-in-out;
-   -moz-transition: width 1.5s ease-in-out;
-   -o-transition: width 1.5s ease-in-out;
-   transition: width 1.5s ease-in-out;
+
+.exploring {
+    background-color: #ff6f61;
 }
-.tooltip{
-   position:relative;
-   float:right;
+
+.building {
+    background-color: #00a9e0;
 }
-.tooltip > .tooltip-inner {
-   background-color: transparent;
-   padding: 1px 5px;
-   color: blue;
-   font-weight: 500;
-   font-size: 12px;
-   border-radius: 0;
+
+.connecting {
+    background-color: #ffca28;
 }
-.popOver + .tooltip > .tooltip-arrow {
-   border-left: 6px solid transparent;
-   border-right: 6px solid transparent;
-   border-top: 6px solid #fff;
-   bottom: -1px;
-   transform: translateX(-50%);
-   margin-left: 0;
+
+.exploring .item {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.building .item {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.connecting .item {
+    background-color: #f0ad4e;
+    color: #fff;
 }
 
 /*-------------------------------------
