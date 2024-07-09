@@ -67,6 +67,79 @@
 				max-height: 60%;				
 				height: auto;
 			}
+			.div-skill-container{
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				background-color: #f5f5f5;
+			}
+			.skill-container {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 20px;
+				padding: 20px;
+			}
+
+			.title-skill {
+				grid-column: span 3;
+				text-align: center;
+				background-color: white;
+				color: black;
+				padding: 20px;
+				border-radius: 8px;
+				size: 14px;
+			}
+
+			.exploring, .building, .connecting {
+				background-color: #e5e5e5;
+				border-radius: 8px;
+				padding: 20px;
+			}
+
+			.exploring .items, .building .items, .connecting .items {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 10px;
+			}
+
+			.exploring .items .item, .building .items .item, .connecting .items .item {
+				background-color: #fff;
+				border: 1px solid #ccc;
+				color: black;
+				padding: 10px;
+				border-radius: 4px;
+				text-align: center;
+			}
+
+			.exploring {
+				background-color: #ff6f61;
+			}
+
+			.building {
+				background-color: #00a9e0;
+			}
+
+			.connecting {
+				background-color: #ffca28;
+			}
+
+			.exploring .item {
+				background-color: #d9534f;
+				color: #fff;
+			}
+
+			.building .item {
+				background-color: #5bc0de;
+				color: #fff;
+			}
+
+			.connecting .item {
+				background-color: #f0ad4e;
+				color: #fff;
+			}
 		</style>
     </head>
 	
@@ -195,7 +268,7 @@
 											
 										</li><!-- / li -->
 										<li>
-											<a href="https://www.linkedin.com/in/bosi-lou-0b6501230/" target="_blank">
+											<a href="https://www.linkedin.com/in/markLou/" target="_blank">
 												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
@@ -244,11 +317,11 @@
 			<div class="container">
 				<div class="education-horizontal-timeline">
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-6">
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
-									<h2>2008 - 2010</h2>
-									<h3>master <span>of </span> computer science</h3>
+									<h2>2021 - 2022 (corse of 2 year)</h2>
+									<h3>master <span>in</span>engineering computer science</h3>
 								</div><!--/.experience-time-->
 								<div class="timeline-horizontal-border">
 									<i class="fa fa-circle" aria-hidden="true"></i>
@@ -257,21 +330,22 @@
 								<div class="timeline">
 									<div class="timeline-content">
 										<h4 class="title">
-											university of north carolina
+											Sapienza University of Rome
 										</h4>
-										<h5>north carolina, USA</h5>
+										<h5>Rome, Italy</h5>
 										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+											The advanced coursework and research projects allowed me to deepen my understanding and proficiency in various programming languages and paradigms.
+											I worked extensively on developing and I completed significant projects involving web servises, machine learning and data analytics. 
 										</p>
 									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-6">
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
-									<h2>2004 - 2008</h2>
-									<h3>bachelor <span>of </span> computer science</h3>
+									<h2>2016 - 2020</h2>
+									<h3>bachelor <span>of</span> engineering computer science</h3>
 								</div><!--/.experience-time-->
 								<div class="timeline-horizontal-border">
 									<i class="fa fa-circle" aria-hidden="true"></i>
@@ -280,35 +354,12 @@
 								<div class="timeline">
 									<div class="timeline-content">
 										<h4 class="title">
-											university of north carolina
+											Sapienza University of Rome
 										</h4>
-										<h5>north carolina, USA</h5>
+										<h5>Rome, Italy</h5>
 										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2004 - 2008</h2>
-									<h3>bachelor <span>of </span> creative design</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line
-									"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											university of bolton
-										</h4>
-										<h5>bolton, united kingdome</h5>
-										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+											Learned programming, data structures, algorithms, computer networks, databases, operating systems, and software engineering.
+											I took specialized courses in areas like artificial intelligence, machine learning, cybersecurity, cloud computing, and web development.
 										</p>
 									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
@@ -323,112 +374,56 @@
 
 		<!--skills start -->
 		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">adobe photoshop</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">adobe illustrator</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">adobe after effects</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">sketch</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
+			<div class="div-skill-container">
+					<div class="skill-container">
+						<div class="title-skill section-heading">
+							<h2>SKILL</h2>
+						</div>
+						<div class="exploring">
+							<h2>frontend</h2>
+							<p>user-friendly website with intuitive navigation and responsive design.</p>
+							<div class="items">
+								<div class="item">Html</div>
+								<div class="item">Css</div>
+								<div class="item">Bootstrap</div>
+								<div class="item">Javascript</div>
+								<div class="item">React</div>
+								<div class="item">Vue3</div>
+								<div class="item">Angular</div>
+								<div class="item">JQuery</div>
 							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">html 5</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">css 3 animation</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">communication</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText"> creativity</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
+						</div>
+						<div class="building">
+							<h2>backend</h2>
+							<p>Robust, scalable backend with secure data handling and efficient APIs.</p>
+							<div class="items">
+								<div class="item">Java</div>
+								<div class="item">Python</div>
+								<div class="item">Maven</div>
+								<div class="item">Spring boot</div>
+								<div class="item">Node.js</div>
+								<div class="item">MyBatis</div>
+								<div class="item">JAXRS</div>
+								<div class="item">Json</div>
+								<div class="item">Hibernates</div>
+								<div class="item">JUnit & Integration Test</div>
 							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
+						</div>
+						<div class="connecting">
+							<h2>databases</h2>
+							<p>Databases store, manage, and retrieve structured data efficiently.</p>
+							<div class="items">
+								<div class="item">MySQL</div>
+								<div class="item">JPQL</div>
+								<div class="item">MongoDB</div>
+								<div class="item">native SQL</div>
+								<div class="item">SPARQL</div>
+								<div class="item">SQL</div>
+							</div>
+						</div>
+					</div>		
 				</div><!-- /.skill-content-->
-
+			</div>
 		</section><!--/.skills-->
 		<!--skills end -->
 
