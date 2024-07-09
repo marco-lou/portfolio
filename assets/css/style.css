@@ -37,15 +37,14 @@ font-family: 'Poppins', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    color: #676a81;
-    background: #fff;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
-    padding: 0 0px;
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:100%;
+    margin:0 auto;
+	overflow-x:hidden;
 }
 
 a,a:hover,a:active,a:focus {
@@ -105,7 +104,7 @@ html,body{
     position: relative;
     z-index: 9999;
 }
-@media (min-width: 100%){}
+@media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
     background-color: #fff;
     border: none;
@@ -278,12 +277,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: blue;}
     content: " ";
     top: 0;
     left:  0;
-    width: 100%;
+    width: 109%;
     height:  100%;
     background: rgba(31,44,108,.3);
 }
 .single-about-img img {
-    max-width: 100%;
+    max-width: 500px;
     height: 468px;
 }
 .about-list-icon{
@@ -293,7 +292,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: blue;}
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 109%;
     height: 90px;
     background: #1f2c6c;
 }
@@ -343,7 +342,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: blue;}
 .single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
-.single-horizontal-timeline p {color: #999fb3;max-width: 100%;}
+.single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
 
 /*.timeline-horizontal-border*/
 .timeline-horizontal-border {
@@ -374,7 +373,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .skills {
     padding: 50px 0 80px;
 }
+.skill-container {
+    flex: auto;
+    gap: 20px;
+    padding: 20px;
+}
 
+
+.title-skill {
+    grid-column: span 3;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    size: 14px;
+}
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
@@ -438,13 +452,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 /* Responsive Styles */
-@media (max-width: 100%) {
+@media (max-width: 1200px) {
     .skill-table {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 100%) {
+@media (max-width: 768px) {
     .skill-table {
         grid-template-columns: 1fr;
     }
