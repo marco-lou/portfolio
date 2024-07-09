@@ -37,14 +37,15 @@ font-family: 'Poppins', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body{
-	font-family: 'Poppins', sans-serif;
-	font-size:16px;
-	color: #676a81;
-	background: #fff;
-    max-width:1920px;
-    margin:0 auto;
-	overflow-x:hidden;
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #676a81;
+    background: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 0 20px;
 }
 
 a,a:hover,a:active,a:focus {
@@ -369,25 +370,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
+/* General Styles */
 .skills {
     padding: 50px 0 80px;
-}
-
-.skill-container {
-    flex: auto;
-    gap: 20px;
-    padding: 20px;
-}
-
-
-.title-skill {
-    grid-column: span 3;
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-    size: 14px;
 }
 
 .section-heading h2 {
@@ -450,6 +435,41 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .connecting .item {
     background-color: #f0ad4e;
     color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .skill-table {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-table {
+        grid-template-columns: 1fr;
+    }
+    
+    .exploring .items, .building .items, .connecting .items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .section-heading h2 {
+        font-size: 20px;
+    }
+    
+    .exploring, .building, .connecting {
+        padding: 10px;
+    }
+    
+    .exploring .items .item, .building .items .item, .connecting .items .item {
+        padding: 8px;
+    }
 }
 
 /*-------------------------------------
