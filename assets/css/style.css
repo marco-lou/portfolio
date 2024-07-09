@@ -369,32 +369,40 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*-------------------------------------
         6.  Skills
 --------------------------------------*/
-/* General Styles */
+/*-------------------------------------
+        6.  Skills
+--------------------------------------*/
 .skills {
     padding: 50px 0 80px;
+    background-color: #f9fbfd;
 }
 .skill-container {
     flex: auto;
     gap: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
-
 
 .title-skill {
     grid-column: span 3;
     text-align: center;
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #3c4258;
     padding: 20px;
     border-radius: 8px;
-    size: 14px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .section-heading h2 {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    border-bottom: 2px solid #e5ebf2;
+    color: #43485c;
+    text-align: center;
 }
 
 .skill-table {
@@ -404,9 +412,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .exploring, .building, .connecting {
-    background-color: #e5e5e5;
+    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.exploring:hover, .building:hover, .connecting:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .exploring .items, .building .items, .connecting .items {
@@ -418,10 +432,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .exploring .items .item, .building .items .item, .connecting .items .item {
     background-color: #fff;
     border: 1px solid #ccc;
-    color: black;
+    color: #43485c;
     padding: 10px;
     border-radius: 4px;
     text-align: center;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .exploring {
@@ -440,15 +455,24 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background-color: #d9534f;
     color: #fff;
 }
+.exploring .item:hover {
+    background-color: #c9302c;
+}
 
 .building .item {
     background-color: #5bc0de;
     color: #fff;
 }
+.building .item:hover {
+    background-color: #31b0d5;
+}
 
 .connecting .item {
     background-color: #f0ad4e;
     color: #fff;
+}
+.connecting .item:hover {
+    background-color: #ec971f;
 }
 
 /* Responsive Styles */
@@ -474,7 +498,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     }
     
     .section-heading h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     .exploring, .building, .connecting {
@@ -485,6 +509,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         padding: 8px;
     }
 }
+
 
 /*-------------------------------------
         7. Experience
