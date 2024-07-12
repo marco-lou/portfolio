@@ -663,7 +663,7 @@
 										<img src="assets/images/portfolio/p1.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a >
-												ui/ux design
+												react web developer
 											</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
@@ -671,7 +671,7 @@
 										<img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a >
-												ui/ux design
+												vue web developer
 											</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
@@ -682,7 +682,7 @@
 										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a >
-												web design
+												database designer
 											</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
@@ -693,7 +693,7 @@
 										<img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a>
-												web development
+												java programmer
 											</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
@@ -701,7 +701,7 @@
 										<img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
 											<a>
-												web development
+												python programmer
 											</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
@@ -769,7 +769,7 @@
 								<div class="contact-adress">
 									<div class="contact-add-head">
 										<h3>bosi lou</h3>
-										<p>uI/uX designer</p>
+										<p>Analist || Software Engineering</p>
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
@@ -781,10 +781,14 @@
 											<p>marcololshine@hotmail.com</p>
 										</div>
 										<div class="single-contact-add-info">
-											<h3>website</h3>
+											<div class="inline-row">
+												<h3>website</h3>
+												<button class="downloadBtn">download QR image</button>
+											</div>
 											<a href="https://marco-lou.github.io/portfolio/">
 												<img class="siteQR" src="assets/images/about/portafolioQR.png" alt="Clickable Image">
 											</a>
+											
 										</div>
 									</div>
 								</div><!--/.contact-adress-->
@@ -867,7 +871,19 @@
 					e.preventDefault();
 					$('#wechatModal').modal('show'); // Show modal
 				});
+				$('.downloadBtn').click(function(e) {
+					var imageUrl = 'assets/images/about/portafolioQR.png';
+                
+					// Create a temporary link element
+					var link = document.createElement('a');
+					link.href = imageUrl;
+					link.download = 'BosiWebQR.png'; // The name of the downloaded file
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+				});
 			});
+			
 		</script>
     </body>
 	
