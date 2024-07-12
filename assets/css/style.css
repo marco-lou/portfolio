@@ -883,10 +883,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*===============================
     Scroll Top
 ===============================*/
-#scroll-Top  .return-to-top {
+#scroll-Top .return-to-top {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    right: 2%;
+    bottom: 2%;
     display: none;
     width: 40px;
     line-height: 40px;
@@ -895,37 +895,64 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     cursor: pointer;
     color: #fff;
-    background:blue;
-	border:1px solid blue;
-	border-radius:50%;
-	-webkit-transition: .5s; 
-	-moz-transition:.5s; 
-	-ms-transition:.5s; 
-	-o-transition:.5s;
+    background: blue;
+    border: 1px solid blue;
+    border-radius: 50%;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-	z-index: 2;
+    z-index: 2;
 }
-#scroll-Top  .return-to-top:hover {
-    background:#fff;
+
+#scroll-Top .return-to-top:hover {
+    background: #fff;
     color: blue;
-	border:1px solid blue;
+    border: 1px solid blue;
 }
 
-#scroll-Top  .return-to-top i{
-    position:relative;
-    bottom:0;
-
-}
-
-#scroll-Top  .return-to-top i{
+#scroll-Top .return-to-top i {
     position: relative;
+    bottom: 0;
     animation-name: example;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-duration:1s;
+    animation-duration: 1s;
 }
+
 @keyframes example {
-    0%   {bottom:0px;}
-    100%  {bottom:7px;}
+    0% { bottom: 0px; }
+    100% { bottom: 7px; }
 }
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    #scroll-Top .return-to-top {
+        right: 3%;
+        bottom: 3%;
+    }
+}
+
+@media (max-width: 992px) {
+    #scroll-Top .return-to-top {
+        right: 4%;
+        bottom: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    #scroll-Top .return-to-top {
+        right: 5%;
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 576px) {
+    #scroll-Top .return-to-top {
+        right: 6%;
+        bottom: 6%;
+    }
+}
+
 /*========================Thank you=================
