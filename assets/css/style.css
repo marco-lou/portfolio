@@ -808,42 +808,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background-color: darkblue; /* Change background color on hover */
 }
 /*--contct button--*/
-.contact-form .single-contact-btn {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:50px;
-    text-transform:capitalize;
-    margin-top: 3px;
-    background: blue;
-    border: 1px solid blue;
-    cursor:pointer;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
-     -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
+
+#submitBtn {
+    width: 100%;
+    padding: 10px; /* Example padding for better appearance */
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
-.contact-form .single-contact-btn .contact-btn ,
-.contact-form .single-contact-btn .contact-btn:focus {
-    margin-top:0px;
-    outline: 0 !important;
-    border:0;
-    color: #fff;
-    border-radius: 0px;
-    font-size:14px;
-    -webkit-transition: .5s; 
-    -moz-transition:.5s; 
-    -ms-transition:.5s; 
-    -o-transition:.5s;
-    transition: .5s;
-    
-}
-.single-contact-btn:hover{
-    background: blue;
-    border: 1px solid blue;
-    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+
+#submitBtn:hover {
+    background-color: darkblue;
 }
 
 /*--contct button--*/

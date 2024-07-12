@@ -735,7 +735,7 @@
 											</div><!--/.col-->
 											<div class="col-sm-6 col-xs-12">
 												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+													<input type="text" class="form-control" id="surname" placeholder="Surname*" name="surname">
 												</div><!--/.form-group-->
 											</div><!--/.col-->
 										</div><!--/.row-->
@@ -755,9 +755,7 @@
 										</div><!--/.row-->
 										<div class="row">
 											<div class="col-sm-12">
-												<div class="single-contact-btn">
-													<a class="contact-btn" href="#" role="button">submit</a>
-												</div><!--/.single-single-contact-btn-->
+												<input type="button" class="contact-btn" id="submitBtn" value="Submit">	
 											</div><!--/.col-->
 										</div><!--/.row-->
 									</form><!--/form-->
@@ -881,6 +879,21 @@
 					document.body.appendChild(link);
 					link.click();
 					document.body.removeChild(link);
+				});
+				$('#submitBtn').click(function(e) {
+					e.preventDefault();
+
+					const name = document.getElementById('name').value;
+					const surname = document.getElementById('surname').value;
+					const email = "marcololshine@hotmail.com";
+					const subject = document.getElementById('subject').value;
+					const message = document.getElementById('comment').value;
+
+					// Construct the mailto link
+					const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Ciao Bosi, \n\n${message}. \n\nSaluti. \n\n${name} ${surname}.`)}`;
+
+					// Open the mailto link
+					window.location.href = mailtoLink;
 				});
 			});
 			
