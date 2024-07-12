@@ -55,17 +55,24 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				min-height: calc(110% ); /* Adjust based on your layout */
-				margin: 0;
-				margin-left: 30%;
+				max-width: 90%; /* Adjusted to be more responsive */
+				max-height: 90%; /* Adjusted to be more responsive */
+				min-height: 50%; /* Adjust based on your layout needs */
+				margin: auto; /* Centers the modal horizontally and vertically */
+				position: fixed; /* Keeps the modal in place */
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 1rem; /* Optional: adds some padding around the modal */
+				box-sizing: border-box; /* Ensures padding and border are included in the width and height */
 			}
 			.modal-content {
 				text-align: center;
 			}
 			.modal-body img {
-				max-width: 60%;
-				max-height: 60%;				
-				height: auto;
+				max-width: 30%;
+				max-height: 30%;
 			}
 
 		</style>
@@ -189,7 +196,7 @@
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="#" id="wechatIcon" target="_blank">
+											<a class="wechatIcon" target="_blank">
 												<i  class="fa fa-weixin" aria-hidden="true"></i>
 											</a>
 											
@@ -368,8 +375,8 @@
 										<div class="row">
 											<div class="col-md-5">
 												<div class="experience-time text-right">
-													<h2>2023 - Present</h2>
-													<h3>creative director</h3>
+													<h2>March 2023 - Present</h2>
+													<h3>Analist || Software Engineering</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -377,9 +384,9 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
+															dxc technology
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Rome, Italy</h5>
 														<p class="description">
 															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
@@ -728,9 +735,6 @@
 		</section><!--/.portfolio-->
 		<!--portfolio end -->
 
-		</section><!--/.clients-->
-		<!--clients end -->
-
 		<!--contact start -->
 		<section id="contact" class="contact">
 			<div class="section-heading text-center">
@@ -804,10 +808,10 @@
 								</div><!--/.contact-adress-->
 								<div class="hm-foot-icon">
 									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-weixin"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--/li-->
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--/li-->
+										<li><a href="https://www.facebook.com/marksummerhot?locale=it_IT" target="_blank"><i class="fa fa-facebook"></i></a></li><!--/li-->
+										<li><a class="wechatIcon" ><i class="fa fa-weixin"></i></a></li><!--/li-->
+										<li><a href="https://www.linkedin.com/in/markLou/" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+										<li><a href="https://www.instagram.com/marksummerhot/" target="_blank"><i class="fa fa-instagram"></i></a></li><!--/li-->
 									</ul><!--/ul-->
 								</div><!--/.hm-foot-icon-->
 							</div><!--/.single-contact-box-->
@@ -877,7 +881,7 @@
         <script>
 			$(document).ready(function() {
 				// Handle click event on WeChat icon link
-				$('#wechatIcon').click(function(e) {
+				$('.wechatIcon').click(function(e) {
 					e.preventDefault();
 					$('#wechatModal').modal('show'); // Show modal
 				});
