@@ -784,7 +784,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #636a82;
     resize: none;
 }
-
+.siteQR{
+    max-width: 100px;
+    max-height: 100px;
+}
 /*--contct button--*/
 .contact-form .single-contact-btn {
     display:flex;
