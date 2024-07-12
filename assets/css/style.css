@@ -788,15 +788,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     max-width: 150px;
     max-height: 150px;
 }
-.inline-row {
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-}
-.inline-row h3 {
-    margin: 0; /* Remove default margin */
-    margin-right: 80px; /* Add space between the h3 and p elements */
-}
-.inline-row .downloadBtn {
+
+.downloadBtn {
     background-color: blue; /* Set background color to blue */
     color: white; /* Set text color to white */
     border: none; /* Remove default border */
@@ -804,7 +797,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     cursor: pointer; /* Change cursor to pointer on hover */
     border-radius: 50px;
 }
-.inline-row .downloadBtn:hover {
+.downloadBtn:hover {
     background-color: darkblue; /* Change background color on hover */
 }
 /*--contct button--*/
