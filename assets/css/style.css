@@ -190,7 +190,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: blue;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/xue.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -282,6 +282,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: blue;}
     background: rgba(31,44,108,.3);
 }
 .single-about-img img {
+    margin-left: 10%;
     max-width: 500px;
     height: 468px;
 }
